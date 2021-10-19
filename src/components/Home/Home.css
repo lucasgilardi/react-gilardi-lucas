@@ -1,0 +1,26 @@
+/*Font Import*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Raleway:wght@400;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.home{
+    /*background-image: ;*/
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.descriptionTitle{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
