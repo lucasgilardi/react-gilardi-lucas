@@ -9,18 +9,23 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 .home{
-    /*background-image: ;*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url(homeback.webp);
+    background-position-y: 62%;
+    background-position-x: 50%;
+    background-size: 175%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 h2{
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 800;
+    color: #fff;
 }
 .descriptionTitle{
     margin-top: 2rem;
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 800;
+    color: #fff;
 }

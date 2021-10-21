@@ -1,12 +1,13 @@
+import CartWidget from '../CartWidget/CartWidget';
 import './NavBar.css';
 
 const NavBar = () => {
     return (
         <header>
             <div>
-                <h1>Arivaci &amp; Co.</h1>
+                <a href="index.html"><h1>Arivaci &amp; Co.</h1></a>
             </div>
-            <div>
+            <div className="navbar-cart">
                 <nav>
                     <ul>
                         <li><a href="#home">HOME</a></li>
@@ -15,7 +16,9 @@ const NavBar = () => {
                         <li><a href="#contact">CONTACT US</a></li>
                     </ul>
                 </nav>
+                <CartWidget />
             </div>
+            
         </header>
     )
 }

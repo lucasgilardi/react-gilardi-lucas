@@ -20,11 +20,17 @@ header{
     top: 0;
     width: 100vw;
 }
-
+a{
+    text-decoration: none;
+}
 h1{
     font-family: 'DM Serif Display', serif;
     font-weight: bold;
     font-size: 1.5rem;
+    color: #fff;
+}
+h1:hover{
+    color: #888888;
 }
 nav ul{
     margin: 0 1rem;
@@ -35,6 +41,13 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-weight: 800;
+}
+nav ul li a:hover{
+    color: #dadada;
+}
+.navbar-cart{
+    display: flex;
+    align-items: center;
 }
