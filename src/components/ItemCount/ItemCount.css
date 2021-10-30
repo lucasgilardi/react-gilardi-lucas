@@ -1,0 +1,44 @@
+.item-count-container{
+    width: 30%;
+    margin: 1rem auto;
+    background-color: #E0D9FF;
+    padding: 1.5rem;
+    border-radius: 0.4rem;
+}
+.product-name{
+    text-align: left;
+    text-transform: uppercase;
+    margin: 1.5rem 0rem;
+}
+.count-container{
+    border: solid 1px #121212;
+    border-radius: 0.3rem;
+    margin: 1rem 0rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #FAF7F3;
+}
+.btn-counter{
+    border: none;
+    background-color: transparent;
+    color: #121212;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-addToCart{
+    border: none;
+    border-radius: 0.3rem;
+    width: 100%;
+    padding: 0.6rem;
+    margin: 1rem 0rem;
+    background-color: #121212;
+    color: #FAF7F3;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
