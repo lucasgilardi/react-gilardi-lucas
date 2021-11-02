@@ -1,0 +1,25 @@
+.product-card{
+    width: 25%;
+    text-align: left;
+    border: solid 3px black;
+    margin: 1rem;
+}
+.img-container{
+    border-bottom: solid 3px black;
+}
+.product-img{
+    width: -webkit-fill-available;
+}
+.info-container{
+    padding: 0.5rem;
+}
+.product-title{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.product-description{
+    font-size: 0.8rem;
+}
+.product-price{
+    font-weight: bold;
+}
