@@ -27,7 +27,6 @@ const ItemListContainer = ({titulo}) => {
     return (
         <div>
             <h2 style={style}>{titulo}</h2>
-            <ItemCount initial={1} stock={5}/>
             {loading ? <h3>Cargando...</h3>
                     : <ItemList items={items}/>
             }

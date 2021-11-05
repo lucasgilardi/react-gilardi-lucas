@@ -1,0 +1,33 @@
+.item-detail{
+    height: 100vh;
+    background-color: #ACC3B0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-img{
+    width: 25%;
+    margin: 0rem 3rem;
+}
+.details-container{
+    text-align: left;
+    letter-spacing: 0.1rem;
+}
+.item-name{
+    font-size: 2rem;
+    color: #fff;
+}
+.item-size{
+    margin: 2rem 0rem;
+    font-weight: 800;
+    color: #fff;
+}
+.item-price{
+    color: #fff;
+    font-weight: 800;
+    margin: 0.5rem 0rem;
+}
+.items-details{
+    margin: 2rem 0rem;
+    color: #fff;
+}

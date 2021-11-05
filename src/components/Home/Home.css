@@ -9,7 +9,7 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 .home{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url(homeback.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(homeback.jpg);
     background-position-y: 62%;
     background-position-x: 50%;
     background-size: 175%;
@@ -18,7 +18,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-h2{
+.home-title{
     font-size: 3.5rem;
     font-weight: 800;
     color: #fff;

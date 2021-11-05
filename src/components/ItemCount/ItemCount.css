@@ -1,14 +1,6 @@
 .item-count-container{
-    width: 30%;
     margin: 1rem auto;
-    background-color: #E0D9FF;
-    padding: 1.5rem;
     border-radius: 0.4rem;
-}
-.product-name{
-    text-align: left;
-    text-transform: uppercase;
-    margin: 1.5rem 0rem;
 }
 .count-container{
     border: solid 1px #121212;
@@ -36,9 +28,10 @@
     width: 100%;
     padding: 0.6rem;
     margin: 1rem 0rem;
-    background-color: #121212;
-    color: #FAF7F3;
+    background-color: #faf7f3;
+    color: #121212;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 800;
     cursor: pointer;
+    box-shadow: 3px 3px 6px 0px rgb(0 0 0 / 10%);
 }

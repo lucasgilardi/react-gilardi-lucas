@@ -30,7 +30,7 @@ h1{
     color: #fff;
 }
 h1:hover{
-    color: #888888;
+    color: #494949;
 }
 nav ul{
     margin: 0 1rem;
@@ -45,7 +45,7 @@ nav ul li a{
     font-weight: 800;
 }
 nav ul li a:hover{
-    color: #dadada;
+    color: #494949;
 }
 .navbar-cart{
     display: flex;
