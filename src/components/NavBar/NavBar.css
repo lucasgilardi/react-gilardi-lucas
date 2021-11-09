@@ -19,6 +19,7 @@ header{
     position: fixed;
     top: 0;
     width: 100vw;
+    z-index: 1;
 }
 a{
     text-decoration: none;
@@ -28,9 +29,10 @@ h1{
     font-weight: bold;
     font-size: 1.5rem;
     color: #fff;
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
 }
 h1:hover{
-    color: #494949;
+    color: #887DA7;
 }
 nav ul{
     margin: 0 1rem;
@@ -43,11 +45,37 @@ nav ul li a{
     text-decoration: none;
     color: #fff;
     font-weight: 800;
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
 }
 nav ul li a:hover{
-    color: #494949;
+    color: #887DA7;
 }
 .navbar-cart{
     display: flex;
     align-items: center;
+}
+/*Submenú*/
+.submenu-arrow{
+    font-size: 1.2rem;
+    vertical-align: bottom;
+    margin-left: 0.5rem;
+}
+.submenu{
+    position: relative;
+}
+ul ul{
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 1rem;
+    right: 0rem;
+}
+ul ul li{
+    display: block;
+    color: #fff;
+    font-weight: 800;
+    text-align: left;
+}
+ul li:hover ul{
+    display: block;
 }

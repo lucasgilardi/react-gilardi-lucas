@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+import { IoIosArrowDown } from 'react-icons/io';
 import CartWidget from '../CartWidget/CartWidget';
 import './NavBar.css';
 
@@ -5,18 +7,24 @@ const NavBar = () => {
     return (
         <header>
             <div>
-                <a href="index.html"><h1>Arivaci &amp; Co.</h1></a>
+                <Link to='/'><h1>Arivaci &amp; Co.</h1></Link>
             </div>
             <div className="navbar-cart">
                 <nav>
                     <ul>
-                        <li><a href="#home">HOME</a></li>
-                        <li><a href="#collection">COLLECTION</a></li>
-                        <li><a href="#shop">SHOP</a></li>
-                        <li><a href="#contact">CONTACT US</a></li>
+                        <li><Link to='/'>HOME</Link></li>
+                        <li><Link to=''>COLLECTION</Link></li>
+                        <li className="submenu"><Link to='/category'>SHOP<IoIosArrowDown className="submenu-arrow"/></Link>
+                            <ul>
+                                <li><Link to='/category/day'>DAY</Link></li>
+                                <li><Link to='/category/night'>NIGHT</Link></li>
+                            </ul>
+                        </li>
+                        <li><Link to=''>CONTACT US</Link></li>
+                        <li><Link to=''><CartWidget/></Link></li>
                     </ul>
                 </nav>
-                <CartWidget />
+                
             </div>
             
         </header>

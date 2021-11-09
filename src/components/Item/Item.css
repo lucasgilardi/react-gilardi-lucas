@@ -1,14 +1,13 @@
 .product-card{
-    width: 25%;
     text-align: left;
     border: solid 3px black;
     margin: 1rem;
-}
-.img-container{
-    border-bottom: solid 3px black;
+    background-color: #fff;
+    position: relative;
 }
 .product-img{
-    width: -webkit-fill-available;
+    width: 100%;
+    border-bottom: solid 3px black;
 }
 .info-container{
     padding: 0.5rem;
@@ -16,10 +15,38 @@
 .product-title{
     font-weight: bold;
     font-size: 1.3rem;
+    color: #000;
 }
 .product-description{
     font-size: 0.8rem;
+    color: #000;
 }
 .product-price{
     font-weight: bold;
+    color: #000;
+}
+.overlay{
+    background-color: #FAF7F3;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    transform: translate(-0%, -100%);
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+.product-card:hover .overlay{
+    opacity: 1;
+}
+.btn-see-more{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    padding: 0.6rem;
+    background-color: #000;
+    color: #fff;
+    font-weight: 800;
+    cursor: pointer;
 }

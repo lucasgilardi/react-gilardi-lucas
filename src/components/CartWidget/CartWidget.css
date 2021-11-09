@@ -1,5 +1,9 @@
 .cart{
-    margin-right: 3rem;
     color: #fff;
     font-size: 1.5rem;
+    vertical-align: bottom;
+    margin-right: 1rem;
+}
+.cart:hover{
+    color: #887DA7;
 }

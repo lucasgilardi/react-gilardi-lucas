@@ -9,6 +9,12 @@
     width: 25%;
     margin: 0rem 3rem;
 }
+.item-img:hover{
+    cursor: zoom-in;
+    transform: scale(1.5);
+    transition: 2s ease;
+    box-shadow: 3px 3px 6px 0px rgb(0 0 0 / 10%);
+}
 .details-container{
     text-align: left;
     letter-spacing: 0.1rem;
