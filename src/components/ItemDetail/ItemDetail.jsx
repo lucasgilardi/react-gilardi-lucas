@@ -1,17 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import ItemCount from "../ItemCount/ItemCount";
-import Cart from '../Cart/Cart';
 import './ItemDetail.css';
 
-const ItemDetail = ({item}) => {
-
-    const [click, setClick] = useState(false)
-
-    const handleAdd = (cantidad) =>{
-        console.log(cantidad)
-        setClick(true)
-    }
+const ItemDetail = ({item, click, setClick, handleAdd}) => {
 
     return (
         <div className="item-detail">
@@ -21,7 +13,7 @@ const ItemDetail = ({item}) => {
                 <p className="item-price">${item.price}</p>
                 <p className="item-size">S M L XL</p>
                 <p className="items-details"><b>DETAILS</b><br/>{item.description}</p>
-                {click ? <Link to='/cart'><Cart/></Link> 
+                {click ? <Link to='/cart'><button className="btn-goToCart">GO TO CART</button></Link> 
                        : <ItemCount initial={1} stock={5} onAdd={handleAdd} />}
             </div>
         </div>
