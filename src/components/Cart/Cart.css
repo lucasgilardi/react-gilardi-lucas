@@ -1,0 +1,106 @@
+.cart-container{
+    display: flex;
+}
+.emptyCart-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.items-cart-container{
+    display: grid;
+    width: 50%;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 5rem 1rem;
+}
+.items-detail-container{
+    margin: 5rem 3rem;
+    width: 50%;
+}
+.product-card-cart{
+    text-align: left;
+    border: solid 3px black;
+    background-color: #fff;
+}
+.product-title-cart{
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+}
+.product-amount{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #000;
+    margin: 0.5rem 0;
+}
+.delete-item-btn{
+    border: none;
+    background-color: transparent;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.product-amount{
+    font-size: 0.8rem;
+    color: #000;
+    margin: 0.4rem 0rem;
+}
+.checkOut-title{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.checkOut-description-container{
+    margin: 2rem 0;
+}
+.checkOut-description{
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.checkOut-btn{
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    background-color: #fff;
+    color: #000;
+    font-weight: 800;
+    font-size: 1rem;
+    cursor: pointer;
+    display: block;
+    width: 20rem;
+    margin-bottom: 1rem;
+    box-shadow: 3px 3px 6px 0px rgb(0 0 0 / 10%);
+}
+.keep-shopping-btn{
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    background-color: #E0D9FF;
+    color: #000;
+    font-weight: 800;
+    font-size: 1rem;
+    cursor: pointer;
+    display: block;
+    width: 20rem;
+    margin-bottom: 1rem;
+    box-shadow: 3px 3px 6px 0px rgb(0 0 0 / 10%);
+}
+.delete-all-btn{
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    background-color: #000;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1rem;
+    cursor: pointer;
+    display: block;
+    width: 20rem;
+    box-shadow: 3px 3px 6px 0px rgb(0 0 0 / 10%);
+}

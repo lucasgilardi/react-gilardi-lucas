@@ -36,12 +36,17 @@ const CartContextProvider = ({children}) => {
         return cartList.some((cartItem) => cartItem.id === item.id)
     }
 
+    const itemCounter = () =>{
+        return cartList.reduce((accum, item) => accum = accum + item.count, 0)
+    }
+
     return (
         <CartContext.Provider value={{
             cartList,
             addItem,
             removeItem,
-            clearCart
+            clearCart,
+            itemCounter
         }}>
             {children}
         </CartContext.Provider>

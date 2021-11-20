@@ -13,8 +13,13 @@ const ItemDetail = ({item, click, setClick, handleAdd}) => {
                 <p className="item-price">${item.price}</p>
                 <p className="item-size">S M L XL</p>
                 <p className="items-details"><b>DETAILS</b><br/>{item.description}</p>
-                {click ? <Link to='/cart'><button className="btn-goToCart">GO TO CART</button></Link> 
-                       : <ItemCount initial={1} stock={5} onAdd={handleAdd} />}
+                {click ? 
+                        <>
+                            <Link to='/category'><button className="btn-addToCart">KEEP SHOPPING</button></Link>
+                            <Link to='/cart'><button className="btn-goToCart">GO TO CART</button></Link> 
+                        </>
+                       : 
+                            <ItemCount initial={1} stock={5} onAdd={handleAdd} />}
             </div>
         </div>
     )

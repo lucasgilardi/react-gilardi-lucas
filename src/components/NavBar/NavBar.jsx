@@ -1,9 +1,13 @@
 import { Link } from 'react-router-dom'
 import { IoIosArrowDown } from 'react-icons/io';
+import { useCartContext } from '../../context/CartContext';
 import CartWidget from '../CartWidget/CartWidget';
 import './NavBar.css';
 
 const NavBar = () => {
+
+    const { itemCounter } = useCartContext()
+
     return (
         <header>
             <div>
@@ -22,6 +26,7 @@ const NavBar = () => {
                         </li>
                         <li><Link to=''>CONTACT US</Link></li>
                         <li><Link to='/cart'><CartWidget/></Link></li>
+                        <span className="item-counter">{itemCounter() !== 0 && itemCounter()}</span>
                     </ul>
                 </nav>
                 
