@@ -13,7 +13,7 @@ const NavBar = () => {
                 <nav>
                     <ul>
                         <li><Link to='/'>HOME</Link></li>
-                        <li><Link to=''>COLLECTION</Link></li>
+                        <li><Link to='/collection'>COLLECTION</Link></li>
                         <li className="submenu"><Link to='/category'>SHOP<IoIosArrowDown className="submenu-arrow"/></Link>
                             <ul>
                                 <li><Link to='/category/day'>DAY</Link></li>
