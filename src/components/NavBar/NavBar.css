@@ -18,8 +18,8 @@ header{
     margin: 1rem;
     position: fixed;
     top: 0;
-    width: 98vw;
-    z-index: 1;
+    width: 100vw;
+    z-index: 2;
 }
 a{
     text-decoration: none;
@@ -78,7 +78,7 @@ ul ul{
     position: absolute;
     width: 100%;
     top: 1rem;
-    right: 0rem;
+    right: 2rem;
 }
 ul ul li{
     display: block;
