@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import { useCartContext } from '../../context/CartContext';
-import { getFetch } from "../../services/getFetch";
+import { getFirestore } from "../../services/getFirestore";
 import ItemDetail from '../ItemDetail/ItemDetail'
 import './ItemDetailContainer.css';
 
@@ -26,11 +26,17 @@ const ItemDetailContainer = () => {
     console.log(cartList)
 
     useEffect(() =>{
-        getFetch
-            .then(res => setItem(res.find(element => element.id === parseInt(id))))
+
+        const dbQuery = getFirestore()
+
+        dbQuery.collection('items').doc(id).get()
+            .then(res => setItem({id: res.id, ...res.data()}))
             .catch(err => console.log(err))
             .finally(() => setLoading(false))
+
     },[id])
+
+    console.log(item)
 
     return (
         <div className="item-detail-container">

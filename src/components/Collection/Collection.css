@@ -1,13 +1,59 @@
 .carousel{
+    min-height: 100vh;
+}
+.carousel-img{
     height: 100vh;
+    width: 100vw;
 }
 .carousel-title{
     color: #fff;
-    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
     font-weight: 800;
     font-size: 1.5rem;
 }
 .carousel-description{
     color: #fff;
-    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+}
+.carousel-img1{
+    background-image: url('https://res.cloudinary.com/dgsapxeyx/image/upload/v1637519341/dcollection1_bdmaii.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.carousel-img2{
+    background-image: url('https://res.cloudinary.com/dgsapxeyx/image/upload/v1637519341/dcollection2_raet7b.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.carousel-img3{
+    background-image: url('https://res.cloudinary.com/dgsapxeyx/image/upload/v1637519341/dcollection3_mbplii.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.carousel-img4{
+    background-image: url('https://res.cloudinary.com/dgsapxeyx/image/upload/v1637777269/ncollection1_o92sdf.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.carousel-img5{
+    background-image: url('https://res.cloudinary.com/dgsapxeyx/image/upload/v1637777269/ncollection2_zrpwok.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.carousel-img6{
+    background-image: url('https://res.cloudinary.com/dgsapxeyx/image/upload/v1637777270/ncollection3_jnwkek.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
