@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
-import { getFetch } from "../../services/getFetch";
 import { useParams } from 'react-router-dom';
 import ItemList from "../ItemList/ItemList";
+import { getFirestore } from "../../services/getFirestore";
 import './ItemListContainer.css';
-
 
 const ItemListContainer = () => {
 
@@ -14,20 +13,18 @@ const ItemListContainer = () => {
 
     useEffect(() =>{
 
+        const dbQuery = getFirestore()
+
         if(categoryId){
-            getFetch
-            .then(res =>{
-                setItems(res.filter(item => item.category === categoryId))
-            })
-            .catch(err => console.log(err))
-            .finally(() => setLoading(false))
+            dbQuery.collection('items').where('category', '==', categoryId).get()
+                .then(data => setItems(data.docs.map(prod => ({id: prod.id, ...prod.data()}))))
+                .catch(err => console.log(err))
+                .finally(() => setLoading(false))
         }else{
-            getFetch
-            .then(res =>{
-                setItems(res)
-            })
-            .catch(err => console.log(err))
-            .finally(() => setLoading(false))
+            dbQuery.collection('items').get()
+                .then(data => setItems(data.docs.map(prod => ({id: prod.id, ...prod.data()}))))
+                .catch(err => console.log(err))
+                .finally(() => setLoading(false))
         }
 
     },[categoryId])
