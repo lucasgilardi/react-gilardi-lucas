@@ -11,6 +11,8 @@ const ItemDetailContainer = () => {
     const [item, setItem] = useState({})
 
     const [loading, setLoading] = useState(true)
+    //eslint-disable-next-line no-unused-vars
+    const [count, setCount] = useState(1)
 
     const [click, setClick] = useState(false)
 
@@ -18,9 +20,10 @@ const ItemDetailContainer = () => {
 
     const {id} = useParams()
 
-    const handleAdd = (count) =>{
-        setClick(count)
+    const onAdd = (count) => {       
         addItem(item, count)
+        setClick(true)
+        setCount(count)
     }
 
     console.log(cartList)
@@ -41,7 +44,7 @@ const ItemDetailContainer = () => {
     return (
         <div className="item-detail-container">
             {loading ? <div className="spinner-container"><div className="loading-spinner"></div></div>
-                    : <ItemDetail item={item} {...{click, setClick}} handleAdd={handleAdd}/>
+                    : <ItemDetail item={item} {...{click, setClick}} onAdd={onAdd}/>
             }
         </div>
     )

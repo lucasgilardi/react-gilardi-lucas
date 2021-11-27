@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import ItemCount from "../ItemCount/ItemCount";
 import './ItemDetail.css';
 
-const ItemDetail = ({item, click, setClick, handleAdd}) => {
+const ItemDetail = ({item, click, setClick, onAdd}) => {
 
     return (
         <div className="item-detail">
@@ -19,7 +19,7 @@ const ItemDetail = ({item, click, setClick, handleAdd}) => {
                             <Link to='/cart'><button className="btn-goToCart">GO TO CART</button></Link> 
                         </>
                        : 
-                            <ItemCount initial={1} stock={5} onAdd={handleAdd} />}
+                            <ItemCount initial={1} stock={5} onAdd={onAdd} />}
             </div>
         </div>
     )

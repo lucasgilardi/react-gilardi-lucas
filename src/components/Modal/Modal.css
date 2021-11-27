@@ -1,0 +1,14 @@
+.modal-content{
+    background-color: #FAF7F3;
+}
+.modal-title{
+    font-weight: bold;
+}
+.orderDataP{
+    font-weight: bold;
+}
+.btn-primary{
+    background-color: #000;
+    border-color: #000;
+    font-weight: bold;
+}
