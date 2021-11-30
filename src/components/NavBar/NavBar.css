@@ -11,7 +11,7 @@ body{
 }
 
 /*NavBar*/
-header{
+/* header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,8 +20,8 @@ header{
     top: 0;
     width: 98vw;
     z-index: 2;
-}
-a{
+} */
+/* a{
     text-decoration: none;
 }
 h1{
@@ -49,6 +49,41 @@ nav ul li a{
 }
 nav ul li a:hover{
     color: #887DA7;
+} */
+/* .navbar-light .navbar-nav .nav-link{
+    color: #fff;
+    font-weight: 800;
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+} */
+nav ul{
+    margin: 0 1rem;
+}
+nav ul li{
+    display: inline;
+    margin: 1rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+}
+nav ul li a:hover{
+    color: #887DA7;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #887DA7;
+}
+.navbar-light .navbar-toggler{
+    color: #fff;
+    border-color: #fff;
+}
+.navbar-light .navbar-toggler:focus{
+    box-shadow: none;
+}
+.hamburger-icon{
+    font-size: 1.5rem;
+    color: #fff;
 }
 .navbar-cart{
     display: flex;
@@ -61,7 +96,7 @@ nav ul li a:hover{
     font-size: 1.3rem;
     color: #fff;
     padding: 0.3rem;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
     text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
 }
 /*Submenú*/
@@ -88,4 +123,47 @@ ul ul li{
 }
 ul li:hover ul{
     display: block;
+}
+.cart-widget-mobile{
+    display: none;
+}
+@media (max-width: 61.99em){
+    .navbar-collapse{
+        position: relative;
+        background-color: #E0D9FF;
+        padding: 1rem 0rem;
+        margin-top: 1rem;
+        box-shadow: -5px 7px 14px -8px rgb(0 0 0 / 71%);
+    }
+    nav ul li{
+        margin: 0;
+    }
+    ul li{
+        padding: 0.5rem;
+    }
+    ul ul{
+        position: initial;
+        padding-left: 0;
+    }
+    ul li:hover ul{
+        display: block;
+        background-color: #c7c0e7;
+        margin: 0.5rem auto;
+    }
+    .cart-widget-desktop{
+        display: none;
+    }
+    .cart-widget-mobile{
+        display: block;
+        position: fixed;
+        top: 1rem;
+        right: 0.5rem;
+    }
+    .cart{
+        margin-right: 1.5rem;
+    }
+    .item-counter{
+        margin: 0;
+        right: 0;
+    }
 }

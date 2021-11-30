@@ -1,5 +1,4 @@
-import React from 'react'
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import { useCartContext } from '../../context/CartContext';
 import { getFirestore } from "../../services/getFirestore";
@@ -11,11 +10,13 @@ const ItemDetailContainer = () => {
     const [item, setItem] = useState({})
 
     const [loading, setLoading] = useState(true)
+
     //eslint-disable-next-line no-unused-vars
     const [count, setCount] = useState(1)
 
     const [click, setClick] = useState(false)
 
+    //eslint-disable-next-line no-unused-vars
     const {cartList, addItem } = useCartContext()
 
     const {id} = useParams()
@@ -25,8 +26,6 @@ const ItemDetailContainer = () => {
         setClick(true)
         setCount(count)
     }
-
-    console.log(cartList)
 
     useEffect(() =>{
 
@@ -39,12 +38,10 @@ const ItemDetailContainer = () => {
 
     },[id])
 
-    console.log(item)
-
     return (
         <div className="item-detail-container">
             {loading ? <div className="spinner-container"><div className="loading-spinner"></div></div>
-                    : <ItemDetail item={item} {...{click, setClick}} onAdd={onAdd}/>
+                     : <ItemDetail item={item} {...{click, setClick}} onAdd={onAdd}/>
             }
         </div>
     )

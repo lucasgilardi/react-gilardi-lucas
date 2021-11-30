@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import React from 'react'
+import React, { useState } from 'react'
 import './ItemCount.css';
 
 const ItemCount = ({stock, initial, onAdd}) => {
@@ -9,6 +8,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
     const sumarItem = () => {
         count < stock ? setCount(count + 1) : alert("Superaste el stock disponible")
     }
+
     const restarItem = () => {
         count > initial ? setCount(count - 1) : alert("No puedes seleccionar menos de un producto")
     }
@@ -21,7 +21,6 @@ const ItemCount = ({stock, initial, onAdd}) => {
                     <label>{count}</label>
                     <button className="btn-counter" onClick={restarItem}> - </button>
                 </div>
-                
                 <button className="btn-addToCart" onClick={() => onAdd(count)}>ADD TO CART</button>
             </div>
         </div>

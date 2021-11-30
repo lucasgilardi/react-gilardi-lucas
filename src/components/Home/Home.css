@@ -10,9 +10,9 @@ body{
     background-color: #ACC3B0;
 }
 .home{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(homeback.jpg);
-    background-position-y: 62%;
-    background-position-x: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('https://res.cloudinary.com/dgsapxeyx/image/upload/v1638279616/homeback_edhofg.jpg');
+    background-position-y: 60%;
+    background-position-x: 45%;
     background-size: 175%;
     height: 100vh;
     display: flex;
@@ -30,4 +30,7 @@ body{
     font-size: 1.2rem;
     font-weight: 800;
     color: #fff;
+}
+a{
+    text-decoration: none;
 }

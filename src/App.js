@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import NavBar from './components/NavBar/NavBar';
 import Home from './components/Home/Home';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
