@@ -17,9 +17,15 @@ const CheckOutModal = (props) => {
                     <Modal.Title id="contained-modal-title-vcenter">Purchase order</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                   <h3>Thank you for buying in Arivaci &amp; Co!</h3>
-                   <p>We've received your order and will proceed to process it. In the next 48hs you will receive an email from us with you ship code.</p>
-                   <p className="orderDataP"> Your order ID is: "{props.idOrder}" and the final price is: ${props.totalPrice}</p>
+                    {props.validate ? <>
+                                        <h3>You must complete all the fields to proceed with your purchase. Please try again.</h3> 
+                                      </>
+                                    : <>
+                                        <h3>Thank you for buying in Arivaci &amp; Co, {props.data.name}!</h3>
+                                        <p>We've received your order and will proceed to process it. In the next 48hs you will receive an email from us with you ship code.</p>
+                                        <p className="orderDataP"> Your order ID is: "{props.id}" and the final price is: ${props.total}</p>
+                                      </>
+                                        }
                 </Modal.Body>
                 <Modal.Footer>
                     <Button onClick={props.onHide}>Close</Button>

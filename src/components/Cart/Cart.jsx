@@ -13,7 +13,7 @@ const Cart = () => {
 
     const [showModal, setShowModal] = useState(false)
 
-    const [idOrder, setIdOrder] = useState()
+    const [idOrder, setIdOrder] = useState(null)
 
     const [formData, setFormData] = useState({
         name: '',
@@ -21,29 +21,36 @@ const Cart = () => {
         email: ''
     })
 
+    const [error, setError] = useState (false)
+
     const generateOrder = (e) =>{
         
         e.preventDefault()
 
-        let orden = {}
+        if (formData.email.trim() === '' || formData.name.trim() === '' || formData.phone.trim()=== '') {
+            setError(true)
+            return
 
-        orden.date = firebase.firestore.Timestamp.fromDate(new Date());
-        orden.buyer = formData
-        orden.total = totalPrice()
-        orden.items = cartList.map(cartItem =>{
-            const id = cartItem.id;
-            const name = cartItem.title;
-            const price = cartItem.price * cartItem.amount;
+          }else{
+            setError(false)
+            let orden = {}
+            orden.date = firebase.firestore.Timestamp.fromDate(new Date());
+            orden.buyer = formData
+            orden.total = totalPrice()
+            orden.items = cartList.map(cartItem =>{
+                const id = cartItem.id;
+                const name = cartItem.title;
+                const price = cartItem.price * cartItem.amount;
 
-            return {id, name, price}
-        })
+                return {id, name, price}
+            })
 
-       const dbQuery = getFirestore()
-        dbQuery.collection('orders').add(orden)
-            .then(({id} ) => {setIdOrder(id)})
-            .then(resp => console.log(resp))
-            .catch (err => console.log (err))   
-    }
+            const dbQuery = getFirestore()
+            dbQuery.collection('orders').add(orden)
+                .then(({id} ) => {setIdOrder(id)})
+                .then(resp => console.log(resp))
+                .catch (err => console.log (err))   
+          }}
 
     const handleChange = (e) =>{
         setFormData({
@@ -57,7 +64,7 @@ const Cart = () => {
         clearCart()
     }
 
-    return<>
+    return(<>
         {cartList.length === 0 && 
             <div className="emptyCart-container">
                 <h2 className="checkOut-title">Your cart is empty!</h2>
@@ -99,7 +106,8 @@ const Cart = () => {
 
                     <div className="checkOut-container">
                         <h3 className="checkOut-title">Check Out</h3>
-                        <form 
+                        <form
+                            className="checkOut-form"
                             onSubmit={generateOrder}
                             onChange={handleChange}
                         >
@@ -131,15 +139,30 @@ const Cart = () => {
                                 />
                             </div>
                             <div className="my-2">
-                                <button className="keep-shopping-btn" onClick={() => setShowModal(true)}>CHECK OUT</button>
+                                
+                                <button 
+                                className="keep-shopping-btn" 
+                                onClick={() => setShowModal(true)}
+                                disabled={formData.name.length === 0 || formData.phone === 0 || formData.email === 0}
+                                >CHECK OUT</button>
                             </div>
                         </form>
                     </div>
                 </div>           
-                <CheckOutModal show={showModal} onHide={handleHide} idOrder={idOrder} totalPrice={totalPrice()}/>
-            </div>                       
-        }
+            </div>
+            }
+
+            <CheckOutModal 
+                show={showModal} 
+                onHide={handleHide} 
+                validate={error} 
+                data={formData} 
+                id={idOrder} 
+                total={totalPrice()}
+            />
+
         </>
+    )
 }
 
 export default Cart

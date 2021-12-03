@@ -14,7 +14,7 @@ const Collection = () => {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item carousel-img1 active">
-            <div className="carousel-caption d-none d-md-block">
+            <div className="carousel-caption d-md-block">
               <h5 className="carousel-title">DAY COLLECTION</h5>
               <p className="carousel-description">Check out our day collection. A 100% office ready!</p>
             </div>
@@ -31,7 +31,7 @@ const Collection = () => {
           </div>
 
           <div className="carousel-item carousel-img4">
-            <div className="carousel-caption d-none d-md-block">
+            <div className="carousel-caption d-md-block">
               <h5 className="carousel-title">NIGHT COLLECTION</h5>
               <p className="carousel-description">Check out our night collection. Classic go out outfits!</p>
             </div>

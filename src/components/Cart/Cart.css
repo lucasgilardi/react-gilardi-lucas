@@ -94,6 +94,9 @@
     margin-bottom: 1rem;
     box-shadow: 3px 3px 6px 0px rgb(0 0 0 / 10%);
 }
+.keep-shopping-btn:disabled{
+    background-color: rgb(199, 194, 194);
+}
 .delete-all-btn{
     border: none;
     padding: 0.5rem;
@@ -110,6 +113,9 @@
 .checkOut-container{
     margin: 2rem 0rem;
 }
+.checkOut-form{
+    text-align: left;
+}
 .checkOut-input{
     margin: 0.5rem 0rem;
     border: none;
@@ -119,7 +125,7 @@
     width: 20rem;
 }
 
-@media (max-width: 61.99em){
+@media (max-width: 62em){
     .cart-container{
         flex-direction: column;
     }
@@ -136,5 +142,8 @@
         display: block;
         margin: auto;
         margin-bottom: 1rem;
+    }
+    .checkOut-form{
+        text-align: center;
     }
 }

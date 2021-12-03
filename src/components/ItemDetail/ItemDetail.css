@@ -65,13 +65,13 @@
     box-shadow: 3px 3px 6px 0px rgb(0 0 0 / 10%);
 }
 
-@media (max-width: 61.99em){
+@media (max-width: 36em){
     .item-detail{
         flex-direction: column;
     }
     .item-img{
         width: 65%;
-        margin-top: 6rem;
+        margin-top: 12rem;
         margin-bottom: 1rem;
     }
 }
