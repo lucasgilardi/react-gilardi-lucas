@@ -4,7 +4,7 @@ Este proyecto de e-commerce fue creado para el curso de React dictado por Coderh
 
 ## Demo
 
-> #####[VER DEMO](https://boring-hermann-3f8dbb.netlify.app/)
+> [VER DEMO](https://boring-hermann-3f8dbb.netlify.app/)
 
 ## Funcionalidad
 
