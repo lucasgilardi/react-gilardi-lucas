@@ -30,8 +30,9 @@ Para la instalación del proyecto:
 3. `npm run start`
 
 ## Diseño
+Diseño 100% responsive adaptado a distintos tamaños de pantalla.
 
-![]()
+![](https://res.cloudinary.com/dgsapxeyx/image/upload/v1638799245/presentation_m2idzw.jpg)
 
 ## Contacto
 [Lucas Gilardi](https://www.linkedin.com/in/lucasgilardi/) | Linkedin

@@ -12,3 +12,7 @@
     border-color: #000;
     font-weight: bold;
 }
+.btn-primary:hover{
+    background-color: #acc3b0;
+    border-color: #acc3b0;
+}

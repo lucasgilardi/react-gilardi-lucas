@@ -1,0 +1,34 @@
+.checkOut-title{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.checkOut-container{
+    margin: 2rem 0rem;
+}
+.checkOut-form{
+    text-align: left;
+}
+.checkOut-input{
+    margin: 0.5rem 0rem;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.3rem;
+    background-color: #fff;
+    color: #000;
+    width: 20rem;
+}
+.checkOut-warning{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.warning-icon{
+    font-size: 1.5rem;
+}
+
+@media (max-width: 62em){
+    .checkOut-form{
+        text-align: center;
+    }
+}
