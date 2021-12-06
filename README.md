@@ -4,6 +4,8 @@ Este proyecto de e-commerce fue creado para el curso de React dictado por Coderh
 
 ## Demo
 
+> #####[VER DEMO](https://boring-hermann-3f8dbb.netlify.app/)
+
 ## Funcionalidad
 
 > Esta simulación de tienda online está destinada a la venta de ropa. el usuario puede visualizar un catálogo de productos traído desde firebase y filtrarlo por categorías. puede acceder al detalle de cada uno y agregar la cantidad deseada al carrito, donde luego finalizará la compra completando sus datos que serán guardados en la base de datos.
@@ -35,5 +37,5 @@ Diseño 100% responsive adaptado a distintos tamaños de pantalla.
 ![](https://res.cloudinary.com/dgsapxeyx/image/upload/v1638799245/presentation_m2idzw.jpg)
 
 ## Contacto
-[Lucas Gilardi](https://www.linkedin.com/in/lucasgilardi/) | Linkedin
+[Lucas Gilardi](https://www.linkedin.com/in/lucasgilardi/) | Linkedin<br>
 lcsgilardi@gmail.com | Mail
